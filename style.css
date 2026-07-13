@@ -5,11 +5,9 @@
     font-family:Arial, sans-serif;
 }
 
-
 html{
     scroll-behavior:smooth;
 }
-
 
 body{
     background:#fff;
@@ -17,13 +15,12 @@ body{
 }
 
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
-
     background:#6A0DAD;
     color:white;
-    padding:15px 8%;
+    padding:12px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -31,73 +28,60 @@ header{
 
 
 .logo{
-
     display:flex;
     align-items:center;
-    gap:15px;
-
+    gap:12px;
 }
 
 
 .logo img{
-
-    width:70px;
-    height:70px;
+    width:50px;
+    height:50px;
     border-radius:50%;
     object-fit:cover;
-
 }
 
 
 .logo h2{
-
-    font-size:24px;
-
+    font-size:22px;
+    margin:0;
 }
 
 
 .logo p{
-
-    font-size:14px;
-
+    font-size:13px;
+    margin-top:3px;
 }
-
 
 
 
 nav{
-
     display:flex;
     gap:25px;
-
 }
 
 
 nav a{
-
     color:white;
     text-decoration:none;
     font-weight:bold;
-
 }
 
 
 nav a:hover{
-
     color:#ffd700;
-
 }
 
 
 
 
 
-/* HERO */
+/* ================= HERO ================= */
 
 
 .hero{
-
     height:450px;
+
     background:
     linear-gradient(
     rgba(0,0,0,.4),
@@ -114,82 +98,65 @@ nav a:hover{
     text-align:center;
 
     color:white;
-
 }
 
 
 
 .hero-content h1{
-
     font-size:45px;
     margin-bottom:15px;
-
 }
 
 
-
 .hero-content p{
-
     font-size:22px;
     margin-bottom:25px;
-
 }
 
 
 
 .btn{
-
     background:#25D366;
     color:white;
     padding:14px 30px;
     border-radius:30px;
     text-decoration:none;
     font-weight:bold;
-
 }
 
 
 
 
 
-/* PRODUCTS */
+/* ================= PRODUCTS ================= */
 
 
 .products{
-
     padding:60px 8%;
     text-align:center;
-
 }
-
 
 
 .products h2{
-
     font-size:35px;
     color:#6A0DAD;
     margin-bottom:40px;
-
 }
-
 
 
 
 .product-container{
-
     display:flex;
     justify-content:center;
     gap:30px;
     flex-wrap:wrap;
-
 }
 
 
 
-
 .product-card{
-
     width:300px;
+
     background:white;
 
     padding:15px;
@@ -200,93 +167,71 @@ nav a:hover{
     0 5px 20px rgba(0,0,0,.15);
 
     transition:.3s;
-
 }
 
 
 
 .product-card:hover{
-
     transform:translateY(-10px);
-
 }
 
 
 
-
 .product-card img{
-
     width:100%;
     height:350px;
     object-fit:cover;
-
     border-radius:12px;
-
 }
 
 
 
 .product-card h3{
-
     color:#6A0DAD;
     font-size:23px;
     margin:15px 0;
-
 }
 
 
 
 .product-card p{
-
     color:#666;
-
 }
 
 
 
 .product-card h4{
-
     font-size:22px;
-    margin:15px;
-
     color:#e91e63;
-
+    margin:15px;
 }
-
-
 
 
 
 .order-btn{
-
     display:block;
-
     background:#25D366;
-
     color:white;
-
-    text-decoration:none;
-
     padding:12px;
 
     border-radius:25px;
 
-    font-weight:bold;
+    text-decoration:none;
 
+    font-weight:bold;
 }
 
 
 .order-btn:hover{
-
     background:#128C7E;
-
 }
 
 
 
 
 
-/* ABOUT */
+
+/* ================= ABOUT ================= */
 
 
 .about{
@@ -299,10 +244,8 @@ nav a:hover{
 
 
 .about h2{
-
     color:#6A0DAD;
     margin-bottom:20px;
-
 }
 
 
@@ -318,7 +261,7 @@ nav a:hover{
 
 
 
-/* CONTACT */
+/* ================= CONTACT ================= */
 
 
 .contact{
@@ -327,7 +270,6 @@ nav a:hover{
     text-align:center;
 
 }
-
 
 
 .contact h2{
@@ -350,7 +292,8 @@ nav a:hover{
 
 
 
-/* SOCIAL */
+
+/* ================= FACEBOOK ================= */
 
 
 .social{
@@ -359,7 +302,6 @@ nav a:hover{
     padding:30px;
 
 }
-
 
 
 .social h2{
@@ -392,7 +334,9 @@ nav a:hover{
 
 
 
-/* WHATSAPP FLOAT */
+
+
+/* ================= WHATSAPP ================= */
 
 
 .whatsapp{
@@ -429,7 +373,7 @@ nav a:hover{
 
 
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 
 footer{
@@ -456,7 +400,7 @@ footer h2{
 
 
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 
 
 @media(max-width:768px){
@@ -465,9 +409,19 @@ footer h2{
 header{
 
     flex-direction:column;
-    gap:20px;
+    gap:15px;
 
 }
+
+
+
+.logo img{
+
+    width:45px;
+    height:45px;
+
+}
+
 
 
 nav{
