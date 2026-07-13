@@ -1,12 +1,8 @@
-/* =========================
-   BASIC SETTINGS
-========================= */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
@@ -14,633 +10,228 @@ body{
     color:#333;
 }
 
-
-/* =========================
-   HEADER
-========================= */
+/* ================= HEADER ================= */
 
 header{
-
     background:#6A0DAD;
     color:white;
-
     padding:15px 8%;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
 }
-
-
-/* LOGO AREA */
 
 .logo{
-
-    display:flex;
-    align-items:center;
-    gap:15px;
-
+    font-size:28px;
+    font-weight:bold;
 }
 
-
-.logo img{
-
-    width:70px;
-    height:70px;
-    object-fit:contain;
-
-}
-
-
-.logo h2{
-
-    font-size:24px;
-
-}
-
-
-.logo p{
-
-    font-size:13px;
-    color:#eee;
-
-}
-
-
-/* =========================
-   MENU
-========================= */
-
-nav{
-
+nav ul{
+    list-style:none;
     display:flex;
     gap:25px;
-
 }
 
-
-nav a{
-
-    color:white;
+nav ul li a{
     text-decoration:none;
+    color:white;
     font-size:16px;
-
 }
 
-
-nav a:hover{
-
+nav ul li a:hover{
     color:#ffd700;
-
 }
 
 
-/* =========================
-   HERO SECTION
-========================= */
+/* ================= HERO SECTION ================= */
 
 .hero{
-
-    height:500px;
-
+    height:450px;
     background:
-
-    linear-gradient(
-    rgba(0,0,0,0.4),
-    rgba(0,0,0,0.4)
-    ),
-
+    linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
     url("images/banner.jpg");
-
 
     background-size:cover;
     background-position:center;
 
     display:flex;
-    align-items:center;
     justify-content:center;
-
+    align-items:center;
     text-align:center;
-
     color:white;
-
 }
 
-
-/* HERO TEXT */
-
-.hero-content h1{
-
+.hero h1{
     font-size:45px;
-    margin-bottom:15px;
-
 }
 
-
-.hero-content p{
-
-    font-size:22px;
-    margin-bottom:30px;
-
+.hero p{
+    margin:15px 0;
+    font-size:20px;
 }
-
-
-/* BUTTON */
 
 .btn{
-
-    background:#ff1493;
-
-    color:white;
-
-    padding:15px 30px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    font-size:18px;
-
     display:inline-block;
-
+    background:#6A0DAD;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
 }
-
 
 .btn:hover{
-
-    background:#d10b75;
-
+    background:#4b0780;
 }
 
 
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media(max-width:768px){
-
-
-header{
-
-    flex-direction:column;
-    gap:20px;
-
-}
-
-
-nav{
-
-    gap:15px;
-
-}
-
-
-.hero-content h1{
-
-    font-size:32px;
-
-}
-
-
-.hero-content p{
-
-    font-size:18px;
-
-}
-
-
-}
-/* =========================
-   PRODUCTS
-========================= */
-
+/* ================= PRODUCTS ================= */
 
 .products{
-
     padding:50px 8%;
-    text-align:center;
-
 }
-
 
 .products h2{
-
-    font-size:35px;
-    color:#6A0DAD;
-    margin-bottom:40px;
-
+    text-align:center;
+    font-size:32px;
+    margin-bottom:35px;
 }
-
 
 
 .product-container{
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
 }
-
 
 
 .product-card{
-
-    width:280px;
-
     background:white;
-
-    padding:20px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 15px #ddd;
+    text-align:center;
+    padding-bottom:20px;
 }
-
 
 
 .product-card img{
-
     width:100%;
-    height:300px;
-
+    height:260px;
     object-fit:cover;
-
-    border-radius:10px;
-
 }
-
 
 
 .product-card h3{
+    margin:15px 0 8px;
+}
 
-    margin:15px 0;
 
+.price{
     color:#6A0DAD;
-
+    font-size:20px;
+    font-weight:bold;
 }
 
 
+/* ================= ABOUT ================= */
 
-.product-card h4{
+.about{
+    background:#f7f7f7;
+    padding:50px 8%;
+    text-align:center;
+}
 
-    font-size:22px;
+.about h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
 
-    margin:15px;
-
+.about p{
+    line-height:1.8;
 }
 
 
+/* ================= CONTACT ================= */
 
-.order-btn{
+.contact{
+    padding:50px 8%;
+}
 
-    background:#25D366;
+.contact h2{
+    text-align:center;
+    margin-bottom:30px;
+}
 
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+
+.contact input,
+.contact textarea{
+
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+
+.contact button{
+
+    width:100%;
+    padding:15px;
+    background:#6A0DAD;
     color:white;
 
-    padding:12px 25px;
+    border:none;
+    border-radius:5px;
 
-    border-radius:25px;
-
-    text-decoration:none;
-
-    display:inline-block;
-
+    font-size:18px;
 }
 
 
-
-.order-btn:hover{
-
-    background:#128C7E;
-
-}
-
-
-
-/* =========================
-   FOOTER
-========================= */
-
+/* ================= FOOTER ================= */
 
 footer{
 
     background:#6A0DAD;
-
     color:white;
 
     text-align:center;
-
-    padding:30px;
-
-    margin-top:40px;
-
-}
-
-
-footer h2{
-
-    margin-bottom:10px;
-
-}
-/* =========================
-   SOCIAL BUTTON
-========================= */
-
-
-.social{
-
-    text-align:center;
-    padding:30px;
-
-}
-
-
-.social a{
-
-    background:#6A0DAD;
-    color:white;
-
-    padding:12px 25px;
-
-    margin:10px;
-
-    border-radius:25px;
-
-    text-decoration:none;
-
-}
-
-
-.social a:hover{
-
-    background:#ff1493;
-
-}
-
-
-
-/* =========================
-   WHATSAPP FLOATING BUTTON
-========================= */
-
-
-.whatsapp{
-
-    position:fixed;
-
-    right:25px;
-
-    bottom:25px;
-
-
-    width:60px;
-
-    height:60px;
-
-
-    background:#25D366;
-
-    color:white;
-
-
-    border-radius:50%;
-
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-
-    font-size:30px;
-
-    text-decoration:none;
-
-
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-
-}
-
-
-
-
-
-/* =========================
-   PRODUCT ANIMATION
-========================= */
-
-
-.product-card{
-
-    transition:0.4s;
-
-}
-
-
-
-.product-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-
-
-
-.product-card img{
-
-    transition:0.4s;
-
-}
-
-
-
-.product-card:hover img{
-
-    transform:scale(1.05);
-
-}
-
-
-
-
-
-/* =========================
-   MOBILE MENU
-========================= */
-
-
-.menu-btn{
-
-    display:none;
-
-    background:none;
-
-    border:none;
-
-    color:white;
-
-    font-size:30px;
-
-}
-
-
-
-
-
-@media(max-width:768px){
-
-
-.menu-btn{
-
-    display:block;
-
-}
-
-
-
-nav{
-
-    display:none;
-
-    flex-direction:column;
-
-    background:#6A0DAD;
-
-    width:100%;
-
-    text-align:center;
-
     padding:20px;
 
 }
 
 
+/* ================= MOBILE RESPONSIVE ================= */
 
-nav.active{
+@media(max-width:768px){
 
-    display:flex;
+header{
+    flex-direction:column;
+}
+
+nav ul{
+
+    margin-top:15px;
+    flex-direction:column;
+    text-align:center;
 
 }
 
 
-}
-/* SEARCH AREA */
-
-
-.shop-tools{
-
-text-align:center;
-
-padding:30px;
-
+.hero h1{
+    font-size:32px;
 }
 
 
-
-#searchBox{
-
-width:300px;
-
-padding:12px;
-
-border-radius:25px;
-
-border:1px solid #ccc;
-
+.hero{
+    height:350px;
 }
-
-
-
-.category button{
-
-margin:10px;
-
-padding:10px 20px;
-
-border:none;
-
-background:#6A0DAD;
-
-color:white;
-
-border-radius:20px;
-
-cursor:pointer;
-
-}
-
-
-
-.cart{
-
-text-align:right;
-
-padding:20px 8%;
-
-font-size:20px;
-
-}
-
-
-
-
-
-/* CART BUTTON */
-
-
-.cart-btn{
-
-background:#ff1493;
-
-color:white;
-
-border:none;
-
-padding:10px 20px;
-
-border-radius:20px;
-
-cursor:pointer;
-
-margin-top:10px;
-
-}
-
-
-
-
-
-/* REVIEW */
-
-
-.reviews{
-
-padding:50px 8%;
-
-text-align:center;
-
-}
-
-
-
-.review-box{
-
-display:inline-block;
-
-width:280px;
-
-padding:20px;
-
-margin:15px;
-
-box-shadow:0 5px 15px #ddd;
-
-border-radius:15px;
 
 }
