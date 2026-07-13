@@ -57,3 +57,55 @@ font-weight:bold;
 .hero a:hover{
 background:#4B0082;
 }
+/* Premium Navbar */
+
+header{
+    background:#6A0DAD;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:55px;
+    height:55px;
+    background:white;
+    color:#6A0DAD;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo h2{
+    margin:0;
+}
+
+.logo small{
+    color:#ddd;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
