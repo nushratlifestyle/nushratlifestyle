@@ -7,12 +7,9 @@ font-family:Arial,sans-serif;
 
 
 body{
-background:white;
 color:#333;
 }
 
-
-/* HEADER */
 
 header{
 
@@ -28,6 +25,7 @@ align-items:center;
 }
 
 
+
 .logo{
 
 display:flex;
@@ -35,6 +33,7 @@ align-items:center;
 gap:10px;
 
 }
+
 
 
 .logo img{
@@ -55,6 +54,7 @@ object-fit:cover;
 font-size:20px;
 
 }
+
 
 
 .logo p{
@@ -82,29 +82,21 @@ text-decoration:none;
 
 
 
-
-/* HERO */
-
-
 .hero{
 
 height:420px;
 
-
-background:
-
+background-image:
 linear-gradient(
 rgba(0,0,0,.4),
 rgba(0,0,0,.4)
 ),
-
 url("images/banner.jpg");
 
 
 background-size:cover;
 
 background-position:center;
-
 
 display:flex;
 
@@ -127,7 +119,6 @@ font-size:45px;
 }
 
 
-
 .hero p{
 
 font-size:22px;
@@ -146,16 +137,13 @@ color:white;
 
 padding:12px 25px;
 
-border-radius:30px;
+border-radius:25px;
 
 text-decoration:none;
 
 }
 
 
-
-
-/* PRODUCTS */
 
 
 .products{
@@ -165,6 +153,7 @@ padding:50px 8%;
 text-align:center;
 
 }
+
 
 
 .products h2{
@@ -181,9 +170,9 @@ margin-bottom:30px;
 
 display:flex;
 
-justify-content:center;
-
 gap:25px;
+
+justify-content:center;
 
 flex-wrap:wrap;
 
@@ -197,9 +186,9 @@ width:300px;
 
 padding:15px;
 
-box-shadow:0 5px 15px #ddd;
-
 border-radius:15px;
+
+box-shadow:0 5px 15px #ddd;
 
 }
 
@@ -259,11 +248,10 @@ margin-top:15px;
 
 
 
+.about,
+.contact{
 
-
-.about,.contact{
-
-padding:40px 8%;
+padding:40px;
 
 text-align:center;
 
@@ -280,35 +268,5 @@ color:white;
 text-align:center;
 
 padding:20px;
-
-}
-
-
-
-@media(max-width:768px){
-
-header{
-
-flex-direction:column;
-
-gap:15px;
-
-}
-
-
-nav{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-}
-
-
-.card{
-
-width:90%;
-
-}
 
 }
