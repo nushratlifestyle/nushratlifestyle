@@ -1,79 +1,146 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 
 body{
-background:white;
+    background:#fff;
+    color:#333;
 }
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+/* ===== HEADER ===== */
 
 
 header{
 
-background:#6A0DAD;
-color:white;
+    background:#6A0DAD;
+    color:white;
 
-padding:10px 8%;
+    padding:10px 8%;
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
 }
+
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+
+
+.logo img{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
 
 
 .logo h2{
 
-font-size:20px;
+    font-size:20px;
+    margin:0;
 
 }
+
 
 
 .logo p{
 
-font-size:12px;
+    font-size:12px;
+    margin-top:3px;
 
 }
+
 
 
 
 nav{
 
-display:flex;
-gap:20px;
+    display:flex;
+    gap:20px;
 
 }
+
 
 
 nav a{
 
-color:white;
-text-decoration:none;
+    color:white;
 
-font-size:15px;
+    text-decoration:none;
+
+    font-weight:bold;
+
+    font-size:15px;
 
 }
 
 
 
+nav a:hover{
+
+    color:#ffd700;
+
+}
+
+
+
+
+
+/* ===== HERO ===== */
+
+
 .hero{
 
-height:400px;
+    height:420px;
 
-background:#f5eaff;
+    background:
 
-display:flex;
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.35)
+    ),
 
-flex-direction:column;
+    url("images/banner.jpg");
 
-justify-content:center;
 
-align-items:center;
+    background-size:cover;
 
-text-align:center;
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
 
 }
 
@@ -81,9 +148,7 @@ text-align:center;
 
 .hero h1{
 
-font-size:40px;
-
-color:#6A0DAD;
+    font-size:45px;
 
 }
 
@@ -91,9 +156,9 @@ color:#6A0DAD;
 
 .hero p{
 
-margin:15px;
+    font-size:22px;
 
-font-size:20px;
+    margin:15px;
 
 }
 
@@ -101,15 +166,17 @@ font-size:20px;
 
 .hero a{
 
-background:#25D366;
+    background:#25D366;
 
-color:white;
+    color:white;
 
-padding:12px 25px;
+    padding:12px 30px;
 
-border-radius:30px;
+    border-radius:30px;
 
-text-decoration:none;
+    text-decoration:none;
+
+    font-weight:bold;
 
 }
 
@@ -117,11 +184,16 @@ text-decoration:none;
 
 
 
+
+
+/* ===== PRODUCTS ===== */
+
+
 .products{
 
-padding:50px 8%;
+    padding:60px 8%;
 
-text-align:center;
+    text-align:center;
 
 }
 
@@ -129,9 +201,11 @@ text-align:center;
 
 .products h2{
 
-color:#6A0DAD;
+    color:#6A0DAD;
 
-margin-bottom:30px;
+    font-size:32px;
+
+    margin-bottom:35px;
 
 }
 
@@ -139,113 +213,264 @@ margin-bottom:30px;
 
 .product-container{
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-gap:25px;
+    gap:30px;
 
-flex-wrap:wrap;
-
-}
-
-
-
-.card{
-
-width:300px;
-
-padding:15px;
-
-box-shadow:0 5px 15px #ddd;
-
-border-radius:15px;
-
-}
-
-
-
-.card img{
-
-width:100%;
-
-height:350px;
-
-object-fit:cover;
-
-border-radius:10px;
-
-}
-
-
-
-.card h3{
-
-color:#6A0DAD;
-
-margin:15px;
-
-}
-
-
-
-.card h4{
-
-color:#e91e63;
-
-font-size:22px;
-
-margin:15px;
-
-}
-
-
-
-.card a{
-
-display:block;
-
-background:#25D366;
-
-color:white;
-
-padding:10px;
-
-border-radius:20px;
-
-text-decoration:none;
+    flex-wrap:wrap;
 
 }
 
 
 
 
+.product-card{
 
-.about,
+    width:300px;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.product-card img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+
+
+.product-card h3{
+
+    color:#6A0DAD;
+
+    margin:15px 0;
+
+    font-size:22px;
+
+}
+
+
+
+.product-card p{
+
+    color:#666;
+
+}
+
+
+
+.product-card h4{
+
+    color:#e91e63;
+
+    font-size:22px;
+
+    margin:15px;
+
+}
+
+
+
+.product-card a{
+
+    display:block;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:25px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+.product-card a:hover{
+
+    background:#128C7E;
+
+}
+
+
+
+
+
+
+
+/* ===== ABOUT ===== */
+
+
+.about{
+
+    background:#f8efff;
+
+    padding:50px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.about h2{
+
+    color:#6A0DAD;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.about p{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+
+
+/* ===== CONTACT ===== */
+
+
 .contact{
 
-padding:40px 8%;
+    padding:50px 8%;
 
-text-align:center;
+    text-align:center;
 
 }
 
 
+
+.contact h2{
+
+    color:#6A0DAD;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact p{
+
+    font-size:18px;
+
+    margin:10px;
+
+}
+
+
+
+
+
+
+
+/* ===== FACEBOOK ===== */
+
+
+.social{
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+
+.social a{
+
+    background:#1877F2;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+/* ===== FOOTER ===== */
 
 
 footer{
 
-background:#6A0DAD;
+    background:#6A0DAD;
 
-color:white;
+    color:white;
 
-text-align:center;
+    text-align:center;
 
-padding:20px;
+    padding:25px;
 
 }
 
 
+
+footer h2{
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+
+
+/* ===== MOBILE ===== */
 
 
 @media(max-width:768px){
@@ -253,52 +478,47 @@ padding:20px;
 
 header{
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:15px;
+    gap:15px;
 
 }
+
 
 
 nav{
 
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
-justify-content:center;
-
-}
-
-
-.card{
-
-width:90%;
+    justify-content:center;
 
 }
 
-
-}
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
 
 
 .logo img{
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    object-fit:cover;
+
+    width:40px;
+
+    height:40px;
+
 }
 
 
-.logo h2{
-    font-size:20px;
-    margin:0;
+
+.hero h1{
+
+    font-size:30px;
+
 }
 
 
-.logo p{
-    font-size:11px;
-    margin:2px 0;
+
+.product-card{
+
+    width:90%;
+
+}
+
+
 }
