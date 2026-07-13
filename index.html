@@ -21,9 +21,12 @@
 
 <header>
 
+
 <div class="logo">
 
+
 <img src="images/logo.png" alt="Logo">
+
 
 <div>
 
@@ -33,12 +36,14 @@
 
 </div>
 
+
 </div>
+
 
 
 <nav>
 
-<a href="#">Home</a>
+<a href="#home">Home</a>
 
 <a href="#products">Products</a>
 
@@ -47,30 +52,38 @@
 <a href="#contact">Contact</a>
 
 </nav>
-<button class="menu-btn" onclick="openMenu()">
+
+
+
+<button class="menu-btn">
 ☰
 </button>
+
 
 </header>
 
 
 
 
-<!-- HERO SECTION -->
+
+<!-- HERO -->
 
 
-<section class="hero">
+<section class="hero" id="home">
 
 
 <div class="hero-content">
 
 
-<h1>New Collection 2026</h1>
+<h1>
+New Collection 2026
+</h1>
 
 
 <p>
 Stylish • Elegant • Affordable
 </p>
+
 
 
 <a href="https://wa.me/8801626868303" class="btn">
@@ -80,77 +93,120 @@ Order on WhatsApp
 </a>
 
 
+
 </div>
 
 
 </section>
 
-<!-- SEARCH & FILTER -->
+
+
+
+
+<!-- SEARCH -->
+
 
 <section class="shop-tools">
 
+
 <input type="text" 
-id="searchBox" 
-placeholder="Search product...">
+placeholder="Search Product..."
+id="searchBox">
+
 
 
 <div class="category">
 
-<button onclick="filterProduct('all')">
+
+<button>
 All
 </button>
 
-<button onclick="filterProduct('saree')">
+
+<button>
 Saree
 </button>
 
-<button onclick="filterProduct('gown')">
+
+<button>
 Gown
 </button>
 
-<button onclick="filterProduct('salwar')">
+
+<button>
 Salwar
 </button>
 
+
 </div>
+
 
 </section>
 
 
+
+
 <div class="cart">
 
-🛒 Cart: <span id="cartCount">0</span>
+🛒 Cart :
+<span id="cartCount">
+0
+</span>
 
 </div>
 
 
 
-<!-- PRODUCTS SECTION -->
+
+
+<!-- PRODUCTS -->
 
 
 <section class="products" id="products">
 
 
-<h2>Our Latest Collection</h2>
+<h2>
+Our Latest Collection
+</h2>
+
+
 
 
 <div class="product-container">
 
 
 
-<div class="product-card">
+<div class="product-card saree">
+
 
 <img src="images/dress1.jpg">
 
-<h3>Premium Saree</h3>
 
-<p>Elegant Party Wear Saree</p>
+<h3>
+Premium Saree
+</h3>
 
-<h4>৳ 2500</h4>
+
+<p>
+Elegant Party Wear Saree
+</p>
+
+
+<h4>
+৳2500
+</h4>
+
+
+<button class="cart-btn">
+Add To Cart
+</button>
+
 
 
 <a href="https://wa.me/8801626868303" class="order-btn">
+
 Order Now
+
 </a>
 
 
@@ -160,20 +216,41 @@ Order Now
 
 
 
-<div class="product-card">
+
+<div class="product-card gown">
+
 
 <img src="images/dress2.jpg">
 
 
-<h3>Wedding Gown</h3>
+<h3>
+Wedding Gown
+</h3>
 
-<p>Luxury Bridal Collection</p>
 
-<h4>৳ 4500</h4>
+<p>
+Luxury Bridal Collection
+</p>
+
+
+<h4>
+৳4500
+</h4>
+
+
+
+<button class="cart-btn">
+
+Add To Cart
+
+</button>
+
 
 
 <a href="https://wa.me/8801626868303" class="order-btn">
+
 Order Now
+
 </a>
 
 
@@ -183,21 +260,42 @@ Order Now
 
 
 
-<div class="product-card">
+
+
+<div class="product-card salwar">
 
 
 <img src="images/dress3.jpg">
 
 
-<h3>Salwar Kameez</h3>
+<h3>
+Salwar Kameez
+</h3>
 
-<p>Modern Ladies Wear</p>
 
-<h4>৳ 1800</h4>
+<p>
+Modern Ladies Fashion
+</p>
+
+
+<h4>
+৳1800
+</h4>
+
+
+
+<button class="cart-btn">
+
+Add To Cart
+
+</button>
+
 
 
 <a href="https://wa.me/8801626868303" class="order-btn">
+
 Order Now
+
 </a>
 
 
@@ -214,20 +312,23 @@ Order Now
 
 
 
-<!-- ABOUT SECTION -->
+
+<!-- ABOUT -->
 
 
 <section class="about" id="about">
 
 
-<h2>About Us</h2>
+<h2>
+About Us
+</h2>
 
 
 <p>
 
 Nushrat Lifestyle is a premium ladies fashion store.
-We provide stylish saree, gown, salwar kameez and
-modern fashion collections at affordable prices.
+We provide stylish saree, gown and ladies wear
+with affordable price.
 
 </p>
 
@@ -238,13 +339,16 @@ modern fashion collections at affordable prices.
 
 
 
-<!-- CONTACT SECTION -->
+
+<!-- CONTACT -->
 
 
 <section class="contact" id="contact">
 
 
-<h2>Contact Us</h2>
+<h2>
+Contact Us
+</h2>
 
 
 <p>
@@ -263,37 +367,56 @@ modern fashion collections at affordable prices.
 
 
 
-<!-- FOOTER -->
 
-<!-- SOCIAL BUTTON -->
+
+<!-- SOCIAL -->
+
 
 <div class="social">
 
-<a href="#" target="_blank">
+
+<a href="#">
 Facebook
 </a>
 
-<a href="#" target="_blank">
+
+<a href="#">
 Instagram
 </a>
+
 
 </div>
 
 
 
-<!-- FLOATING WHATSAPP -->
+
+
+
+
+<!-- WHATSAPP -->
+
 
 <a href="https://wa.me/8801626868303" 
-class="whatsapp"
-target="_blank">
+class="whatsapp">
 
 💬
 
 </a>
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
 <footer>
 
 
-<h2>Nushrat Lifestyle</h2>
+<h2>
+Nushrat Lifestyle
+</h2>
 
 
 <p>
@@ -312,10 +435,10 @@ Premium Ladies Fashion Store
 
 
 
+
 <script src="script.js"></script>
 
 
 </body>
-
 
 </html>
