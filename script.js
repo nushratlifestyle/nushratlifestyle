@@ -1,1 +1,1 @@
-console.log("Nushrat Lifestyle Loaded Successfully");
+console.log("Nushrat Lifestyle Website Loaded");
