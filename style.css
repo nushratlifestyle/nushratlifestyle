@@ -331,3 +331,19 @@ width:90%;
 
 
 }
+/* SMALL LOGO / BRAND FIX */
+
+.brand{
+    line-height:1.2;
+}
+
+.brand h2{
+    font-size:18px !important;
+    font-weight:600;
+    margin:0;
+}
+
+.brand p{
+    font-size:11px !important;
+    margin:2px 0 0;
+}
