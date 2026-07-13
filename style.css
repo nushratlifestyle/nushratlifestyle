@@ -6,88 +6,64 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:white;
+background:#ffffff;
 }
 
 header{
-
 background:#6A0DAD;
 color:white;
-
+padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-padding:20px 8%;
-
 }
 
 .logo{
-
 font-size:30px;
 font-weight:bold;
-
 }
 
 nav a{
-
 color:white;
 text-decoration:none;
 margin-left:25px;
-
+font-weight:bold;
 }
 
 nav a:hover{
-
 color:#FFD700;
-
 }
 
 .hero{
-
-height:90vh;
-
+height:85vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-
-background:#F5EDFF;
-
 text-align:center;
-
+background:#F4ECFF;
 }
 
 .hero h1{
-
-font-size:55px;
+font-size:50px;
 color:#6A0DAD;
-
+margin-bottom:20px;
 }
 
 .hero p{
-
-margin:20px;
 font-size:22px;
-
+margin-bottom:30px;
 }
 
-.btn{
-
-padding:15px 35px;
-
+.button{
 background:#6A0DAD;
-
 color:white;
-
-text-decoration:none;
-
+padding:15px 35px;
 border-radius:8px;
-
+text-decoration:none;
+font-weight:bold;
 }
 
-.btn:hover{
-
+.button:hover{
 background:#4B0082;
-
 }
