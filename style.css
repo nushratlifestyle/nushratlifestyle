@@ -449,3 +449,28 @@ nav{
 
 
 }
+/* FINAL LOGO FIX */
+
+header .logo img{
+    width:40px !important;
+    height:40px !important;
+    max-width:40px !important;
+    max-height:40px !important;
+    object-fit:contain !important;
+}
+
+
+header .logo{
+    display:flex;
+    align-items:center;
+}
+
+
+header .logo h2{
+    font-size:20px;
+}
+
+
+header .logo p{
+    font-size:12px;
+}
