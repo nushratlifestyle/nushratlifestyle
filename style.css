@@ -530,3 +530,117 @@ nav.active{
 
 
 }
+/* SEARCH AREA */
+
+
+.shop-tools{
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+
+#searchBox{
+
+width:300px;
+
+padding:12px;
+
+border-radius:25px;
+
+border:1px solid #ccc;
+
+}
+
+
+
+.category button{
+
+margin:10px;
+
+padding:10px 20px;
+
+border:none;
+
+background:#6A0DAD;
+
+color:white;
+
+border-radius:20px;
+
+cursor:pointer;
+
+}
+
+
+
+.cart{
+
+text-align:right;
+
+padding:20px 8%;
+
+font-size:20px;
+
+}
+
+
+
+
+
+/* CART BUTTON */
+
+
+.cart-btn{
+
+background:#ff1493;
+
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:20px;
+
+cursor:pointer;
+
+margin-top:10px;
+
+}
+
+
+
+
+
+/* REVIEW */
+
+
+.reviews{
+
+padding:50px 8%;
+
+text-align:center;
+
+}
+
+
+
+.review-box{
+
+display:inline-block;
+
+width:280px;
+
+padding:20px;
+
+margin:15px;
+
+box-shadow:0 5px 15px #ddd;
+
+border-radius:15px;
+
+}
